@@ -1,0 +1,14 @@
+﻿#bg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -150px; /* half of the height of the header */
+    margin-left: -310px; /* half of the width of the header*/
+}
+
+#commingsoon {
+    text-align: left;
+    font-family: sans-serif;
+    padding-left: 215px;
+    padding-top: 20px;
+}
