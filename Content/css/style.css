@@ -1341,7 +1341,7 @@ h1.about_kids {
 
 .checkin_big {
     float: left;
-    //background: #F3F4F6;
+    background: #F3F4F6;
     padding: 5px 0px;
     width: 47%;
     text-align: center;
@@ -1349,7 +1349,6 @@ h1.about_kids {
 
 .home-software {
     float: left;
-    width: 47%;
     height: auto;
     margin-left: 3%;
 }
