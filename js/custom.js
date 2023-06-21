@@ -129,19 +129,19 @@ $(document).ready(function () {
 
     /* ==== 7) SVG FTW! ==== */
 
-    var url = '/css/streamline-icons.svg';
+    var url = 'css/streamline-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/css/simpleline-icons.svg';
+    var url = 'css/simpleline-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/css/social-icons.svg';
+    var url = 'css/social-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/css/icons.svg';
+    var url = 'css/icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
