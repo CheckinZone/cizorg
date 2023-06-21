@@ -62,7 +62,7 @@ $(document).ready(function () {
                         $('.navbar-brand div').css({'width':'123px', 'height':'20px'});*/
         }
         /* if touch device detected, append image logo
-                else $(".navbar-brand").append("<img src='~/Content/img/logo.png' alt='logo' class='img-responsive'>")*/
+                else $(".navbar-brand").append("<img src='~/img/logo.png' alt='logo' class='img-responsive'>")*/
     });
 
     /* ==== 3) Custom Scrollbar ==== */
@@ -129,19 +129,19 @@ $(document).ready(function () {
 
     /* ==== 7) SVG FTW! ==== */
 
-    var url = '/Content/css/streamline-icons.svg';
+    var url = '/css/streamline-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/Content/css/simpleline-icons.svg';
+    var url = '/css/simpleline-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/Content/css/social-icons.svg';
+    var url = '/css/social-icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
-    var url = '/Content/css/icons.svg';
+    var url = '/css/icons.svg';
     var c = new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
     document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
 
