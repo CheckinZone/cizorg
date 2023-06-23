@@ -105,28 +105,6 @@ $(document).ready(function () {
         });
     });
 
-    /* ==== 6) Contact form ==== */
-
-    $('.flowuplabels').FlowupLabels({
-        feature_onInitLoad: false,
-        class_focused: 'focused',
-        class_populated: 'populated'
-    });
-
-    var options = {
-        target: '.message .alert',
-        beforeSubmit: showRequest,
-        success: showResponse
-    };
-
-    $('#contactForm').ajaxForm(options);
-    function showRequest(formData, jqForm, options) {
-        var queryString = $.param(formData);
-        return true;
-    }
-    function showResponse(responseText, statusText) {
-    }
-
     /* ==== 7) SVG FTW! ==== */
 
     var url = 'css/streamline-icons.svg';
@@ -152,36 +130,9 @@ $(document).ready(function () {
         $(this).ekkoLightbox();
     });
 
-    /* ==== 8) Google map ==== */
-
-    $(".gmap").gMap({
-        controls: {
-            panControl: false,
-            zoomControl: true,
-            mapTypeControl: false,
-            scaleControl: false,
-            streetViewControl: false,
-            overviewMapControl: false
-        },
-        scrollwheel: false,
-        draggable: true,
-        markers: [{
-            latitude: 45.256,
-            longitude: 19.845
-        }],
-        icon: {
-            image: "img/map-pin.png",
-            iconsize: [32, 48],
-            iconanchor: [16, 24],
-            infowindowanchor: [0, 0]
-        },
-        latitude: 45.256,
-        longitude: 19.845,
-        zoom: 15
-    });
 });
 
-$(window).load(function () {
+$(window).on("load", function() {
     'use strict';
 
     /* ==== 9) Collapse menu on click on mobile and tablet devices ==== */
@@ -190,18 +141,14 @@ $(window).load(function () {
         $('.navbar a').click(function () { $(".navbar-collapse").collapse("hide") });
     }
 
-    /* ==== 10) Responsive videos ==== */
-
-    $('.fit-video').fitVids();
-
     /* ==== 11) Smooth Scroll on Anchors ==== */
 
     $.localScroll.hash();
-    $('.scroll-btn, #more, .hidden-xs, .nav, .navbar-header, #footer li').localScroll({
+    $('.nav').localScroll({
         target: 'body',
         queue: true,
-        duration: 1000,
-        hash: false,
+        duration: 500,
+        hash: true,
         offset: -60,
         easing: 'easeInOutExpo'
     });
